@@ -21,9 +21,12 @@ function reverse(str) {
 
   let arr = str.split('')
 
-  
+  let last = arr.splice(arr.length - 1)
+
+  return last + reverse(arr.join(''))
 
 }
+
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/

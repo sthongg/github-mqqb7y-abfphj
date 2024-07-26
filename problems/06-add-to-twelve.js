@@ -15,6 +15,17 @@ addToTwelve([1]); // false
 
 function addToTwelve(arr) {
   // Your code here 
+
+  if (!arr.length) {
+    return false
+  }
+
+  if(arr[0] + arr[1] === 12) {
+    return true
+  }
+
+  arr.splice(0 ,1)
+  return addToTwelve(arr)
 }
 
 
